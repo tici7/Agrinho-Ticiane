@@ -1,0 +1,331 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Agro Forte - Futuro Sustentável</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      background:#f4fff4;
+      color:#234;
+      line-height:1.6;
+    }
+
+    header{
+      background:linear-gradient(to right,#1b5e20,#43a047);
+      color:white;
+      padding:40px 20px;
+      text-align:center;
+    }
+
+    header h1{
+      font-size:3rem;
+      margin-bottom:10px;
+    }
+
+    header p{
+      font-size:1.2rem;
+    }
+
+    nav{
+      background:#2e7d32;
+      padding:15px;
+      text-align:center;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin:0 15px;
+      font-weight:bold;
+    }
+
+    section{
+      padding:50px 20px;
+      max-width:1200px;
+      margin:auto;
+    }
+
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:20px;
+      margin-top:30px;
+    }
+
+    .card{
+      background:white;
+      border-radius:12px;
+      overflow:hidden;
+      box-shadow:0 5px 15px rgba(0,0,0,0.1);
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-5px);
+    }
+
+    .card img{
+      width:100%;
+      height:200px;
+      object-fit:cover;
+    }
+
+    .card-content{
+      padding:20px;
+    }
+
+    .quiz{
+      background:white;
+      padding:30px;
+      border-radius:15px;
+      box-shadow:0 5px 15px rgba(0,0,0,0.1);
+      margin-top:30px;
+    }
+
+    .question{
+      margin-bottom:25px;
+    }
+
+    .question h3{
+      margin-bottom:10px;
+      color:#1b5e20;
+    }
+
+    button{
+      background:#2e7d32;
+      color:white;
+      border:none;
+      padding:12px 25px;
+      border-radius:8px;
+      cursor:pointer;
+      font-size:1rem;
+      transition:0.3s;
+    }
+
+    button:hover{
+      background:#1b5e20;
+    }
+
+    #resultado{
+      margin-top:20px;
+      font-size:1.2rem;
+      font-weight:bold;
+      color:#1b5e20;
+    }
+
+    .opiniao{
+      margin-top:40px;
+      background:#e8f5e9;
+      padding:30px;
+      border-radius:15px;
+    }
+
+    textarea{
+      width:100%;
+      height:120px;
+      padding:15px;
+      border-radius:10px;
+      border:1px solid #aaa;
+      resize:none;
+      margin-top:10px;
+    }
+
+    footer{
+      background:#1b5e20;
+      color:white;
+      text-align:center;
+      padding:20px;
+      margin-top:50px;
+    }
+
+    .hero-img{
+      width:100%;
+      border-radius:15px;
+      margin-top:30px;
+      box-shadow:0 5px 15px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🌱 Agro Forte</h1>
+    <p>Futuro Sustentável - Construindo um futuro melhor através da sustentabilidade e preservação.</p>
+  </header>
+
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#sustentabilidade">Sustentabilidade</a>
+    <a href="#quiz">Quiz</a>
+    <a href="#opiniao">Sua Opinião</a>
+  </nav>
+
+  <section id="sobre">
+    <h2>🌿 O que é o Agro Forte?</h2>
+
+    <p>
+      O Agro Forte representa a união entre tecnologia, agricultura e sustentabilidade.
+      Nosso objetivo é incentivar práticas agrícolas responsáveis, preservando o meio ambiente
+      e garantindo um futuro melhor para as próximas gerações.
+    </p>
+
+    <img class="hero-img" src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80&w=1200&auto=format&fit=crop" alt="Campo sustentável">
+
+    <div class="cards">
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?q=80&w=1000&auto=format&fit=crop">
+        <div class="card-content">
+          <h3>🌎 Preservação Ambiental</h3>
+          <p>
+            A preservação das florestas e rios é essencial para manter o equilíbrio da natureza.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1000&auto=format&fit=crop">
+        <div class="card-content">
+          <h3>🚜 Agricultura Sustentável</h3>
+          <p>
+            Técnicas modernas ajudam a produzir alimentos sem prejudicar o meio ambiente.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1492496913980-501348b61469?q=80&w=1000&auto=format&fit=crop">
+        <div class="card-content">
+          <h3>💧 Economia de Água</h3>
+          <p>
+            O uso consciente da água reduz desperdícios e protege os recursos naturais.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="sustentabilidade">
+    <h2>♻️ Como podemos melhorar?</h2>
+
+    <p>
+      Pequenas ações podem transformar o planeta:
+    </p>
+
+    <ul style="margin-top:20px; margin-left:20px;">
+      <li>✅ Plantar árvores</li>
+      <li>✅ Evitar desperdício de água</li>
+      <li>✅ Reciclar materiais</li>
+      <li>✅ Incentivar energia limpa</li>
+      <li>✅ Preservar rios e florestas</li>
+    </ul>
+  </section>
+
+  <section id="quiz">
+    <h2>🧠 Quiz Sustentável</h2>
+
+    <div class="quiz">
+
+      <div class="question">
+        <h3>1. Qual atitude ajuda o meio ambiente?</h3>
+
+        <label><input type="radio" name="q1" value="certo"> Reciclar lixo</label><br>
+        <label><input type="radio" name="q1" value="errado"> Jogar lixo nos rios</label><br>
+        <label><input type="radio" name="q1" value="errado"> Desmatar florestas</label>
+      </div>
+
+      <div class="question">
+        <h3>2. O que economiza água?</h3>
+
+        <label><input type="radio" name="q2" value="certo"> Fechar a torneira</label><br>
+        <label><input type="radio" name="q2" value="errado"> Deixar mangueira ligada</label><br>
+        <label><input type="radio" name="q2" value="errado"> Desperdiçar água</label>
+      </div>
+
+      <div class="question">
+        <h3>3. O que é agricultura sustentável?</h3>
+
+        <label><input type="radio" name="q3" value="certo"> Produzir preservando a natureza</label><br>
+        <label><input type="radio" name="q3" value="errado"> Poluir o solo</label><br>
+        <label><input type="radio" name="q3" value="errado"> Destruir florestas</label>
+      </div>
+
+      <button onclick="corrigirQuiz()">Ver Resultado</button>
+
+      <div id="resultado"></div>
+
+    </div>
+  </section>
+
+  <section id="opiniao">
+    <div class="opiniao">
+      <h2>💡 O que você acha que pode melhorar?</h2>
+
+      <p>
+        Escreva sua ideia para ajudar o planeta e tornar o futuro mais sustentável:
+      </p>
+
+      <textarea placeholder="Digite sua opinião aqui..."></textarea>
+
+      <br><br>
+
+      <button onclick="enviarOpiniao()">Enviar Opinião</button>
+
+      <p id="mensagem"></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>🌱 Agro Forte | Futuro Sustentável © 2026</p>
+  </footer>
+
+  <script>
+    function corrigirQuiz(){
+      let pontos = 0;
+
+      const q1 = document.querySelector('input[name="q1"]:checked');
+      const q2 = document.querySelector('input[name="q2"]:checked');
+      const q3 = document.querySelector('input[name="q3"]:checked');
+
+      if(q1 && q1.value === "certo"){
+        pontos++;
+      }
+
+      if(q2 && q2.value === "certo"){
+        pontos++;
+      }
+
+      if(q3 && q3.value === "certo"){
+        pontos++;
+      }
+
+      let resultado = document.getElementById("resultado");
+
+      resultado.innerHTML = 
+        "🌟 Você acertou " + pontos + " de 3 perguntas!";
+
+      if(pontos === 3){
+        resultado.innerHTML += "<br>Parabéns! Você entende sobre sustentabilidade 🌎";
+      }
+    }
+
+    function enviarOpiniao(){
+      document.getElementById("mensagem").innerHTML =
+      "✅ Obrigado pela sua opinião! Juntos podemos construir um futuro melhor.";
+    }
+  </script>
+
+</body>
+</html>
+```
